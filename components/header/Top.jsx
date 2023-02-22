@@ -9,7 +9,6 @@ import UserMenu from './UserMenu';
 import { useSession } from 'next-auth/react';
 
 export default function Top({ country }) {
-    console.log(country)
     const { data: session } = useSession();
     // const [loggedIn, setLoggedIn] = useState(true);
     const [visible, setVisible] = useState(false);
@@ -19,8 +18,8 @@ export default function Top({ country }) {
                 <div></div>
                 <ul className={styles.top__list}>
                     <li className={styles.li}>
-                        <img src={country?.flag.emojitwo} alt='Nigeria' />
-                        <span>{country?.name} / {country?.code}</span>
+                        <img src={country.flag.noto} alt='Nigeria' />
+                        <span>{country.name} / {country.code}</span>
                     </li>
                     <li className={styles.li}>
                         <MdSecurity />
