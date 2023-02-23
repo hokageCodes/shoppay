@@ -18,7 +18,7 @@ export default function Top({ country }) {
                 <div></div>
                 <ul className={styles.top__list}>
                     <li className={styles.li}>
-                        <img src={country.flag.noto} alt='Nigeria' />
+                        <img src={country.flag} alt='Nigeria' />
                         <span>{country.name} / {country.code}</span>
                     </li>
                     <li className={styles.li}>

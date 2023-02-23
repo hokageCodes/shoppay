@@ -21,15 +21,15 @@ export default function Home({ country }) {
 
 export async function getServerSideProps() {
   let data = await axios
-  .get('https://api.ipregistry.co/?key=86goyptzilxd8ccv')
-  .then((res) => {
-    return res.data.location.country;
-  }) .catch((err) => {
-    console.log(err)
-  })
-  return {
-    props: {
-      country: { name: data.name, flag: data.flag.noto, countryCode: data.code }
+    .get('https://api.ipregistry.co/?key=s35t0h92v8hjuud9')
+    .then((res) => {
+      return res.data.location.country;
+    }) .catch((err) => {
+      console.log(err)
+    })
+    return {
+      props: {
+        country: { name: data.name, flag: data.flag.noto, countryCode: data.code }
+      }
     }
-  }
 }

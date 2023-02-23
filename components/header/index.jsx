@@ -4,6 +4,7 @@ import MainComp from './MainComp';
 import Top from './Top';
 
 export default function Header({ country }) {
+    console.log(country)
     return (
         <header className={styles.header}>
             <Ad />
