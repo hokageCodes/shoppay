@@ -40,4 +40,5 @@
 - Validating the sign up form with Yup. Also created a "user model" for users signing up newly, and for existing users.
 - Created models for User signup
 - Created email validations, added JWT, RegEx, and encryption(bcrypt) to the webapp
+- Used [Google Cloud Console](console.cloud.google.com) and [Google's oAuth2 Playground](https://developers.google.com/oauthplayground) for email validation on signup
 
