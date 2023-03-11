@@ -21,7 +21,7 @@ export default function Home({ country }) {
 
 export async function getServerSideProps() {
   let data = await axios
-    .get('https://api.ipregistry.co/?key=86goyptzilxd8ccv')
+    .get('https://api.ipregistry.co/?key=2a1ojtqado1b1on7')
     .then((res) => {
       return res.data.location.country;
     }) .catch((err) => {
@@ -29,7 +29,8 @@ export async function getServerSideProps() {
     })
     return {
       props: {
-        country: { name: data.name, flag: data.flag.noto, countryCode: data.code }
+        country: { name: data.name, flag: data.flag.emojitwo, countryCode: data.code }
       }
     }
+  console.log(data)
 }

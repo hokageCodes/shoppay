@@ -38,4 +38,6 @@
 - Worked on signin component with the necessary frontend validations for users.
 - Worked on signup component with the necessary frontend validations for users.. All of these aren't functional yet in the case of actually registering or signing into the web application.
 - Validating the sign up form with Yup. Also created a "user model" for users signing up newly, and for existing users.
+- Created models for User signup
+- Created email validations, added JWT, RegEx, and encryption(bcrypt) to the webapp
 

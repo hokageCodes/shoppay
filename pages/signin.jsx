@@ -22,7 +22,6 @@ const initialvalues = {
 }
 
 export default function signin({ providers }) {
-  console.log(providers)
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [user, setUser] = useState(initialvalues);
   const { login_email, login_password, name, email, password, confirm_password } = user;

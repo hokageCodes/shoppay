@@ -12,7 +12,7 @@ export default function MainComp() {
             <div className={styles.main__container}>
                 <Link legacyBehavior href='/'>
                     <a className={styles.logo}>
-                        <img src='../../../shoppayLogo.png' alt='' />
+                        <imgage src='../../../shoppayLogo.png' alt='' />
                     </a>
                 </Link>
                 <div className={styles.search}>

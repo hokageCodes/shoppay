@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./styles.module.scss";
 import { MdSecurity } from "react-icons/md";
 import { BsSuitHeart } from "react-icons/bs";
@@ -16,7 +17,7 @@ export default function Top({ country }) {
         <ul className={styles.top__list}>
           <li className={styles.li}>
             <img src={country?.flag} alt="" />
-            <span>{country?.name} / USD</span>
+            <span>{country?.name}</span>
           </li>
           <li className={styles.li}>
             <MdSecurity />
