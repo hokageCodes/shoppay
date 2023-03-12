@@ -2,7 +2,7 @@ import nc from 'next-connect'
 import bcrypt from 'bcrypt'
 import db from '../../../utils/db'
 import { validateEmail } from '../../../utils/validation';
-import {User} from '../../../models/User'
+import User from '../../../models/User'
 import { createActivationToken } from '../../../utils/tokens';
 
 const handler = nc();
@@ -17,7 +17,9 @@ handler.post(async(req, res) => {
         if (!validateEmail(email)) {
             return res.status(400).json({ message: "Invalid email." });
         }
-        const user = await User.findOne({ email })
+        const user = await User.findOne({ email }).catch()
+        console.log(user);
+        
         if (user) {
             return res.status(400).json({ message: "This email already exsits." });
         }

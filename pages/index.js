@@ -32,5 +32,4 @@ export async function getServerSideProps() {
         country: { name: data.name, flag: data.flag.emojitwo, countryCode: data.code }
       }
     }
-  console.log(data)
 }
