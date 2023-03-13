@@ -4,6 +4,8 @@ import db from '../../../utils/db'
 import { validateEmail } from '../../../utils/validation';
 import User from '../../../models/User'
 import { createActivationToken } from '../../../utils/tokens';
+import { sendEmail } from '@/utils/sendEmail';
+import activateEmailTemplate from '@/emails/activateEmailTemplate';
 
 const handler = nc();
 
