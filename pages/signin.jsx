@@ -117,8 +117,8 @@ export default function Signin({ providers, callbackUrl, csrfToken }) {
     }
   };
   const country = {
-    name: "Morocco",
-    flag: "https://cdn-icons-png.flaticon.com/512/197/197551.png?w=360",
+    name: "Nigeria",
+    flag: "https://cdn-icons-png.flaticon.com/512/197/197627.png",
   };
   return (
     <>
