@@ -18,7 +18,7 @@
 
 ### Footer Component
 - Added main footer links
-- Added footer socials and Newsletter input (News letter isn't functional yet)
+- Added footer socials and Newsletter input (News1letter isn't functional yet)
 - Added Payment and copyright UI
 - Responsive Footer
 
@@ -42,4 +42,5 @@
 - Created email validations, added JWT, RegEx, and encryption(bcrypt) to the webapp
 - Used [Google Cloud Console](console.cloud.google.com) and [Google's oAuth2 Playground](https://developers.google.com/oauthplayground) for email validation on signup
 - Signup with email done and working (i dont receive email link yet tho). Also, Loading, Success and Error state created for sign up, and on successful signup, user is redirected to the home page.
+- Sign-In with registered email and password is working. Error handled properly for unregistered emails or invalid input.
 
