@@ -44,3 +44,13 @@ $cubic-bezier: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     align-items: center;
     gap: 5px;
 }
+
+.error {
+  padding: 10px;
+  color: $error-color;
+}
+
+.success {
+  padding: 10px;
+  color: $success-color;
+}
