@@ -34,6 +34,15 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_SECRET
     }),
   ],
+  callbacks: {
+    async session({ session, token }) {
+      let user = await User.findById(token.sub);
+      session.user._id = token.sub || user._id.toSting();
+      session.user.role = user.role || "user";
+      token.role = user.role || "user";
+      return session;
+    },
+  },
   pages: {
     signIn: "/signin"
   }, 

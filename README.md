@@ -4,6 +4,7 @@
 
 ## Build Process
 ### Setting Up
+Hajime!
 - Created Next App, Cleaned up, and Reset CSS global styles.
 - Created Database with MongoDB compass and did the connecting and Disconnecting to the DB functionality.
 - Set Up Redux, Redux toolkit, and Redux persisit!
@@ -23,7 +24,7 @@
 - Responsive Footer
 
 ### Location Detection
-- Used [THIS API](https://ipregistry.co/) for location detection on the site. Whatever country a user is visiting the site from is going to show accordingly. 
+- Used [THIS API](https://ipregistry.co/) for location detection on the site. Whatever country a user is visiting the site from is going to show accordingly. k'naa mean?
 
 ### Authentication using Next-auth
 - Installed [next-auth ](https://next-auth.js.org/), and did a test with the provided data in the docs to make sure it works first.
@@ -40,7 +41,8 @@
 - Validating the sign up form with Yup. Also created a "user model" for users signing up newly, and for existing users.
 - Created models for User signup
 - Created email validations, added JWT, RegEx, and encryption(bcrypt) to the webapp
-- Used [Google Cloud Console](console.cloud.google.com) and [Google's oAuth2 Playground](https://developers.google.com/oauthplayground) for email validation on signup
+- Used [Google Cloud Console](console.cloud.google.com) and [Google's oAuth2 Playground](https://developers.google.com/oauthplayground) for email validation on signup. I also used [stripo](www.stripo.email) for free email templates to send to users upon sign up, to validate their emails. You know, the regular convention. Maad ting yeah?
 - Signup with email done and working (i dont receive email link yet tho). Also, Loading, Success and Error state created for sign up, and on successful signup, user is redirected to the home page.
 - Sign-In with registered email and password is working. Error handled properly for unregistered emails or invalid input.
-
+- Refactored to use callbacks in the authentication.
+-  Using csrfToken redirect so that users can get logged back in to their last point. Also the authentication page to be a protected route - When a user is already signed in, they cannot access the page.
