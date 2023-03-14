@@ -46,3 +46,5 @@ Hajime!
 - Sign-In with registered email and password is working. Error handled properly for unregistered emails or invalid input.
 - Refactored to use callbacks in the authentication.
 -  Using csrfToken redirect so that users can get logged back in to their last point. Also the authentication page to be a protected route - When a user is already signed in, they cannot access the page.
+
+### Forgot, Reset Password
