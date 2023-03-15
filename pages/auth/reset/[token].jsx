@@ -118,7 +118,7 @@ export async function getServerSideProps(context) {
     };
   }
   const token = query.token;
-  const user_id = jwt.verify("pojadphjapidja", process.env.RESET_TOKEN_SECRET);
+  const user_id = jwt.verify("asdflkjhghghghg", process.env.RESET_TOKEN_SECRET);
   if (user_id == null) {
     console.log("adoajdàihjadiohiodhjioadha");
   }
