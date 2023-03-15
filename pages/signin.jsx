@@ -5,7 +5,7 @@ import { BiLeftArrowAlt } from "react-icons/bi";
 import Link from "next/link";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import LoginInput from "../components/inputs/loginInput/loginInput";
+import LoginInput from "@/components/inputs/loginInput/loginInput";
 import { useState } from "react";
 import CircledIconBtn from "../components/buttons/circledIconBtn";
 import {

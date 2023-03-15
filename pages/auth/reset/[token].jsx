@@ -3,7 +3,7 @@ import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import CircledIconBtn from "../../../components/buttons/circledIconBtn";
-import LoginInput from "../../../components/inputs/loginInput";
+import LoginInput from "@/components/inputs/loginInput/loginInput";
 import { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
@@ -21,6 +21,7 @@ export default function Reset({ user_id }) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState("");
+  
   const passwordValidation = Yup.object({
     password: Yup.string()
       .required("Please enter your new password.")
