@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.scss'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import axios from 'axios'
+import Main from '@/components/home/main/main'
 
 
 export default function Home({ country }) {
@@ -11,14 +12,19 @@ export default function Home({ country }) {
   return (
     <>
       <Header country={country}/>
-      {
-        session ? "You are logged in" : "You are not logged in"
-      }
+        <div className={styles.home}>
+          <div className={styles.container}>
+            <Main />
+          </div>
+        </div>
       <Footer country={country}/>
     </>
   )
 }
 
+// {
+//   session ? "You are logged in" : "You are not logged in"
+// }
 export async function getServerSideProps() {
   let data = await axios
     .get('https://api.ipregistry.co/?key=2a1ojtqado1b1on7')
