@@ -55,3 +55,4 @@ Hajime!
 
 ### Home Page
 - Homepage Boilerplate setup
+- Swiper for the homepage "Hero section" using [swiper js](https://swiperjs.com)
