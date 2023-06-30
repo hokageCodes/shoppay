@@ -27,7 +27,7 @@ export default function Home({ country }) {
 // }
 export async function getServerSideProps() {
   let data = await axios
-    .get('https://api.ipregistry.co/?key=2a1ojtqado1b1on7')
+    .get('https://api.ipregistry.co/?key=e8k7kc2jtqzi9nwe')
     .then((res) => {
       return res.data.location.country;
     }) .catch((err) => {
