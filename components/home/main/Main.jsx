@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import MainSwiper from './swiper';
+import MainSwiper from './Swiper';
 
 export default function Main() {
   return (

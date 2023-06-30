@@ -55,3 +55,4 @@ Hajime!
 
 ### Home Page
 - Homepage Boilerplate setup
+- Swiper for the homepage "Hero section" carousel using [swiper js](https://swiperjs.com), and added respective images that are being mapped to the carousel.

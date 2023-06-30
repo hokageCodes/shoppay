@@ -19,30 +19,30 @@ const oauth2Client = new OAuth2(
 
 //send email
 
-export const sendEmail = (to, url, subject, txt, template) => {
-    oauth2Client.setCredentials({
-        refresh_token: MAILING_SERVICE_REFRESH_TOKEN,
-    });
-    const accessToken = oauth2Client.getAccessToken();
-    const smtpTransport = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-        type: "OAuth2",
-        user: SENDER_EMAIL_ADDRESS,
-        clientId: MAILING_SERVICE_CLIENT_ID,
-        clientSecret: MAILING_SERVICE_CLIENT_SECRET,
-        refreshToken: MAILING_SERVICE_REFRESH_TOKEN,
-        accessToken,
-        },
-    });
-    const mailOptions = {
-        from: SENDER_EMAIL_ADDRESS,
-        to: to,
-        subject: subject,
-        html: template(to, url),
-    };
-    smtpTransport.sendMail(mailOptions, (err, infos) => {
-        if (err) return err;
-        return infos;
-    });
-}; 
+// export const sendEmail = (to, url, subject, txt, template) => {
+//     oauth2Client.setCredentials({
+//         refresh_token: MAILING_SERVICE_REFRESH_TOKEN,
+//     });
+//     const accessToken = oauth2Client.getAccessToken();
+//     const smtpTransport = nodemailer.createTransport({
+//         service: "gmail",
+//         auth: {
+//         type: "OAuth2",
+//         user: SENDER_EMAIL_ADDRESS,
+//         clientId: MAILING_SERVICE_CLIENT_ID,
+//         clientSecret: MAILING_SERVICE_CLIENT_SECRET,
+//         refreshToken: MAILING_SERVICE_REFRESH_TOKEN,
+//         accessToken,
+//         },
+//     });
+//     const mailOptions = {
+//         from: SENDER_EMAIL_ADDRESS,
+//         to: to,
+//         subject: subject,
+//         html: template(to, url),
+//     };
+//     smtpTransport.sendMail(mailOptions, (err, infos) => {
+//         if (err) return err;
+//         return infos;
+//     });
+// }; 
