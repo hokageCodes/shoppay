@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import styles from "./styles.module.scss";
 import { menuArray } from "../../../data/home";
 import Link from "next/link";
