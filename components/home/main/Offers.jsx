@@ -33,7 +33,7 @@ export default function Offers() {
       >
         {offersAarray.map((offer) => (
           <SwiperSlide>
-            <Link href="">
+            <Link legacyBehavior href="">
               <img src={offer.image} alt="" />
             </Link>
             <span>{offer.price}$</span>
