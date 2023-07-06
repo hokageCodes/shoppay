@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import styles from "./styles.module.scss";
 import { calcaulateDiff } from "./utils";
+
 const defaultRemainingTime = {
     seconds: "00",
     minutes: "00",
